@@ -47,26 +47,6 @@ public:
 /***********
 linked list implemention
 ************/
-/*template<class T>
-class noode
-{
-public:
-	noode<T> *next;
-	T value;
-};
-template<class T>
-class Queue
-{
-private:
-	noode<T> * head;
-	noode<T> *tail;
-	int size;
-public:
-	Queue();
-	void append(T val);
-	T retrive();
-	int QSize();
-};*/
 
 template<class T>
 class noode
