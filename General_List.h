@@ -30,12 +30,30 @@ public:
 		void push_back(T);
 		T pop_back();
 		T pop_front();
+		void push(int, T);
 		T pop(int);
 		int LSize();
+};
+template<class T>
+class Node
+{
+	T data;
+	Node *next;
 };
 
 template<class T>
 class listL_S : public list_S<T>
 {
+	Node *head;
+	Node *tail;
+	int size;
+public:
+	listL_S();
+	void push_front(T);
+	void push_back(T);
+	T pop_back();
+	T pop_front();
+	T pop(int);
+	int LSize();
 
 };
