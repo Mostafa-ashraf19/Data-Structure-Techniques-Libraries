@@ -37,20 +37,23 @@ public:
 template<class T>
 class Node
 {
+public:
 	T data;
-	Node *next;
+	Node<T> *next;
 };
 
 template<class T>
 class listL_S : public list_S<T>
 {
-	Node *head;
-	Node *tail;
+	Node<T> *head;
+	Node<T> *tail;
+	Node<T> *oldtail;
 	int size;
 public:
 	listL_S();
 	void push_front(T);
 	void push_back(T);
+	void push(int, T);
 	T pop_back();
 	T pop_front();
 	T pop(int);

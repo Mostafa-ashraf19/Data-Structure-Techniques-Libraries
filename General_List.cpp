@@ -67,7 +67,7 @@ int listA_S<T> ::LSize()
 /*	Single linked list array implemention end */
 /*	Single linked list linked implemention start */
 template<class T>
-listL_S<T> ::listL_S() : head('\0'),tail('\0'),size(0) {}
+listL_S<T> ::listL_S() : head('\0'),tail('\0'),oldtail('\0'),size(0) {}
 
 template<class T>
 void listL_S<T> ::push_front(T val)
@@ -79,7 +79,7 @@ void listL_S<T> ::push_front(T val)
 	else
 		pl->next = head;
 	head = pl;
-	size++
+	size++;
 }
 template<class T>
 void listL_S<T> ::push_back(T val)
@@ -91,9 +91,48 @@ void listL_S<T> ::push_back(T val)
 		head = pl;
 	else 
 		tail->next = pl;
+	oldtail = tail;
 	tail = pl;
 	size++;
 }
+template<class T>
+void listL_S<T> ::push(int index, T val)
+{
+	return;
+}
+template<class T>
+T listL_S<T> ::pop_front()
+{
+	Node<T> * pl = (Node<T> *)new Node<T>;
+	pl = head;
+	head = head->next;
+	T val = pl->data;
+	delete pl;
+	size--;
+	return val;
+}
+template<class T>
+T listL_S<T> ::pop_back()
+{
+	Node<T> * pl = (Node<T> *)new Node<T>;
+	pl = tail;
+	T val = pl->data;
+	tail = oldtail;
+	tail->next = '\0';
+	delete pl;
+	return val;
+}
+template<class T>
+T listL_S<T> ::pop(int index)
+{
+	return 0;
+}
+template<class T>
+int listL_S<T> ::LSize()
+{
+	return size; 
+}
+
 
 
 #endif
