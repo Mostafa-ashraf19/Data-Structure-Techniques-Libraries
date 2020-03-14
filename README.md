@@ -6,27 +6,27 @@ used in implemention important concepts of object oriented programming (inherita
 
 ---
 
-##Library description:
+## Library description:
 
-  1- Stack 
+  1. Stack 
      - Array implemntion:
      
      - Linked implemntion:
-  2- Queue  
+  2. Queue  
       - Array implemntion:
      
      - Linked implemntion:
-  3- General List 
-      - Array implemntion:
+  3. General List 
+     - Array implemntion:
      
      - Linked implemntion:
      
-        - Single Linked List 
+       - Single Linked List 
         
-        - Double Linked List
-  4- Trees 
+       - Double Linked List
+  4. Trees 
   
-  5- Graphs
+  5. Graphs
   
       
 ---
