@@ -1,8 +1,8 @@
 # Data-Structure-Techniques-Libraries
 ---
 
-In this repository will make Data Structure Techniques Libraries( Stack ,Queue,General List, Trees, .... ) Array and Linked list implementation, Algorithms Techniques like(Searching, Sorting,...), All of them Implemented by  **C++**.<br/> 
-used in implemention important concepts of object oriented programming (inheritance, polymorphism, templates, operator overloading, ...)
+In this repository will make Data Structure Techniques Libraries( Stack, Queue, General List, Trees, .... ) Array and Linked list implementation, Algorithms Techniques like(Searching, Sorting,...), All of them Implemented by C++.
+used in implementation important concepts of object oriented programming (inheritance, polymorphism, templates, operator overloading, ...)
 
 ---
 
